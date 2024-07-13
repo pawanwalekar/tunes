@@ -1,0 +1,340 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: #252529;
+    font-family: 'PT Sans', sans-serif;
+}
+
+nav .mytunes{
+    background-color: #333;
+    color: rgb(51, 34, 34);
+    height: 2.5rem;
+    width: 100%;
+    display: flex;
+    padding-left: 1rem;
+    position: fixed;
+}
+
+nav .mytunes i{
+    color: #fff;
+    display: none;
+    
+}
+
+nav .mytunes a{
+ align-content: center;
+ margin-left: 1.5rem;
+ text-decoration: none;
+ color:rgb(206, 187, 187);
+ padding: 0.6rem;
+}
+
+.mytunes a:hover{
+    background: rgb(65, 64, 64);
+}
+
+/*-------------------responsive nav bar---------------------*/
+
+@media screen and (max-width:500px){
+    nav .mytunes i{
+        color: #fff;
+        display: block;
+        margin-left: 20rem;
+        margin-top: 0.8rem;
+    }
+
+    nav .mytunes .a{
+       display: none;
+    }
+}
+/*---------------Navbar End------------------*/
+
+
+.home{
+    background: url('image/baground.jpeg');
+    background-size: cover;
+    min-height: 94vh;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+
+.home h1{
+    font-size: 3.5rem;
+}
+
+.home h3{
+  padding-top: 2.5rem;
+  font-size: 2rem;
+}
+
+.home p{
+   padding-top: 2rem;
+   font-size: 1.2rem;
+   margin: 0 10rem 0;
+}
+
+
+/*---------------responisve home---------------------*/
+@media screen and (max-width:500px){
+
+  .home h1{
+    margin-top: 2rem;
+   }
+
+   .home p{
+     margin: 0 5rem 0;
+   }
+}
+
+/*-------------------home page End--------------*/
+
+
+.Music{
+    min-height: 94vh;
+    padding-top: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.Music img{
+    height: 700px;
+    width: 1200px;
+}
+
+.Music h1{
+    font-size: 2.5rem;
+}
+
+.Music h3{
+    font-size: 1.7rem;
+    padding-top: 1.5rem;
+
+}
+
+.Music p{
+    font-size: 1.2rem;
+    padding-top: 1.5rem;
+    margin: 0 10rem 0;
+
+}
+
+.Music button{
+    margin-top: 2rem;
+    background-color:#b90415;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+/*---------------responisve music start---------------------*/
+
+@media screen and (max-width:500px){
+    .Music p{
+        margin: 0 5rem 0;
+    }
+
+    .Music img{
+        height: 250px;
+        width: 450px;
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+/*-----------music section end----------------*/
+
+.Video{
+    min-height: 120vh;
+    padding-top: 3rem;
+    text-align: center;
+    background-color: white;
+    padding-bottom: 2rem;
+}
+
+.Video h1{
+    font-size: 1.8rem;
+}
+
+.Video p{
+    font-size: 1.2rem;
+    padding-top: 1.5rem;
+    margin: 0 10rem 0;
+    
+}
+
+.Video button{
+    margin-top: 2rem;
+    background-color:#103063;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+
+.video1{
+    background:url('image/video1.jpeg');
+    height: 94vh;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    color: white;
+
+}
+
+.video1 h1{
+  font-size: 1.8rem;
+  padding-top: 12rem;
+  margin: 0 10rem 0;
+
+
+}
+
+.video1 p{
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    margin: 0 10rem 0;
+
+}
+
+/*---------------responisve video start---------------------*/
+
+@media screen and (max-width:500px){
+    .Video p{
+        margin: 0 5rem 0;
+    }
+
+    .video1 p{
+        margin: 0 5rem 0;
+    }
+
+    .video1 h1{
+        margin: 0 5rem 0;
+        padding-top: 7rem;
+
+    }
+
+    .video1{
+        height: 100vh;
+    }
+
+    .Video img{
+        height: 350px;
+        width: 470px;
+    }
+}
+
+
+/*----------------Video part End----------------*/
+
+.giftcard{
+    display: flex;
+    background-color: white;
+    min-height: 60vh;
+    padding: 2rem;
+}
+
+.giftcard .gift_info{
+    margin-top: 4rem;
+    width:600px;
+}
+
+.GiftCard img{
+    height:400px;
+    width:600px;
+}
+
+.giftcard .gift_info .gift{
+    padding-top: 1rem;
+    width: 600px;
+}
+
+.gift_info p{
+    padding-top: 1rem;
+    font-size: 16px;
+}
+
+.giftcard .gift_info a{
+    padding-top: 2rem;
+    text-decoration: none;
+    line-height: 1rem;
+}
+
+.gift_info hr{
+   margin: 1rem;
+   margin-left: 0rem;
+}
+
+/*---------------responisve gift start---------------------*/
+
+@media screen and (max-width:500px){
+    .giftcard{
+        display:block;
+    }
+
+    .GiftCard img{
+        height: 300px;
+        width: 400px;
+    }
+    
+    .giftcard .gift_info .gift{
+        width: 400px;
+    }
+
+}
+
+
+
+
+/*-------------------giftcard End------------------*/
+
+.footer{
+    display: flex;
+    height: 300px;   
+    background: #333; 
+    padding-left: 7rem;
+}
+
+.footer .link{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 3rem;
+    
+}
+
+.footer .link hr{
+    margin: 1rem;
+    margin-left: 0rem;
+}
+
+.footer .link a{
+    text-decoration: none;
+    color: white;
+    padding-top: 0.6rem;
+}
+
+ .copyright{
+    background: #3d3d3d;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    color:white;
+}
+
+/*---------------responisve footer start---------------------*/
+
+@media screen and (max-width:500px){
+
+    .footer{
+        display: none;
+    }
+
+}
+
+
+
